@@ -45,6 +45,53 @@
 // local variable are variable that are declared inside of a function, and cannot be accessed outside of the function scope
 
 
+// default values for function arguments
+// function showMessage(msg, name){
+//     if (!name){
+//         name = 'bob'
+//     }
+//  let showMessage = msg +" "+ name;
+//  alert(showMessage)
+// }
+// showMessage("hello, i am a message from", "abiola")
+
+// returning from a function
+// function sum(a,b){
+//     return a+b
+// }
+// let result = sum(4,6)
+// alert(result);
+
+// let age = prompt("how old are you?", 18)
+// function checkAge(age){
+//     if(age>=18){
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+// if(checkAge(age)){
+//     alert("Access Granted")
+// } else {
+//     alert("Access Denied")
+// }
+
+// function exanple- finding prime numbers with function
+function isPrime(n){
+  if(n<=1)
+    return false
+  
+  for(let i=2; i<n; i++){
+    if(n%i==0){
+        alert('this is not a prime number')
+        return false
+    }
+    alert(n)
+    return true
+  }
+
+}
+isPrime(6)
 
 
 
