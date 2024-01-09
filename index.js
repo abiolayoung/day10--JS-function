@@ -149,7 +149,7 @@ declaration name cant be used used twice in the region of our project but functi
 can be used when the function has been delcared in a global scope but not assigned*/
 
 // example using function declaration
-"use strict"
+// "use strict"
 // let age = prompt("what is your age?", 18)
 // if(age<18){
 //   function welcome(){
@@ -163,18 +163,53 @@ can be used when the function has been delcared in a global scope but not assign
 
 // welcome()
 
-let age = prompt()
-let welcome;
-if(age<18){
-  welcome = function(){
-    alert('you are a teenager')
-  }
-} else{
-  welcome = function(){
-    alert('you are not a teenager')
-  }
-}
-welcome()
+// let age = prompt()
+// let welcome;
+// if(age<18){
+//   welcome = function(){
+//     alert('you are a teenager')
+//   }
+// } else{
+//   welcome = function(){
+//     alert('you are not a teenager')
+//   }
+// }
+// welcome()
+
+// ARROW Function //
+
+// let func = (arg1, arg2,...., argN) => expression
+
+/* this is a function exprssion-  let func = function(arg1, arg2,...., argN){
+  return expression*/
+
+// let sum = (a,b) => a+b
+// alert(sum(6,3))
+
+// for single argument
+// let double = a => a*5
+// alert(double(3))
+
+// for no argument arrow function
+// let sayHi = () => alert('hello world')
+// sayHi()
+
+// let age = prompt("what is your age", 18)
+
+// let welcome = (age<18) ? () => alert('Teenager') : () => alert('not teenager')
+// welcome()
+
+// multiple line ARROW function need a curly braces 
+
+// let sum = (a,b) => {
+//   let result = a+b
+//   return result
+// }
+// alert(sum(3,5))
+
+
+
+
 
 
 
