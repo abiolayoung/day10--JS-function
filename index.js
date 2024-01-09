@@ -77,21 +77,107 @@
 // }
 
 // function exanple- finding prime numbers with function
-function isPrime(n){
-  if(n<=1)
-    return false
+// function isPrime(n){
+//   if(n<=1)
+//     return false
   
-  for(let i=2; i<n; i++){
-    if(n%i==0){
-        alert('this is not a prime number')
-        return false
-    }
-    alert(n)
-    return true
-  }
+//   for(let i=2; i<n; i++){
+//     if(n%i==0){
+//         alert('this is not a prime number')
+//         return false
+//     }
+//     alert(n)
+//     return true
+//   }
 
+// }
+// isPrime(6)
+
+// function expression- this allow us create a new function in a form of expression
+
+// let sayHi = function(){
+//   alert('hello world')
+// }
+// sayHi()
+
+// function expression is a method of storing a function inside of a varaible
+// function ask(question, yes, no){
+//    if (confirm(question)){
+//     yes()
+//    } else {
+//     no()
+//    }
+// }
+
+// function showOk(){
+//   alert('you have agreed')
+// }
+// function showCancel(){
+//   alert('you canceled the execution')
+// }
+// ask('Do you Agree?', showOk, showCancel)
+
+// function delcaration vs function expression
+// whenever we execute a code in javascript, the execution start from top to bottom, check example below
+// alert('first line')
+// alert('second line')
+// alert('third line')
+// alert('fouth line')
+// alert('fifth line')
+
+/*javascript first look for all the function created using function declaration
+let try and call our function expression and see the code wont get executed because
+we are trying to call it ahead of function declaration, function expression cant be called
+before it is declared, only function declaration has hoisting power to be called before declaration*/
+
+// multiply(4,5)
+// function sum(a,b){
+//   alert(a+b)
+// }
+
+// function sub(a,b){
+//   alert(a-b)
+// }
+
+// let multiply = function(a,b){
+//   alert(a*b)
+// }
+// multiply(2,4)
+
+/*second difference between function delcaration and expression is that, in a use strict mode same function 
+declaration name cant be used used twice in the region of our project but function expression
+can be used when the function has been delcared in a global scope but not assigned*/
+
+// example using function declaration
+"use strict"
+// let age = prompt("what is your age?", 18)
+// if(age<18){
+//   function welcome(){
+//     alert('you are a teenager')
+//   }
+// } else {
+//   function welcome(){
+//     alert('you are not a teenager')
+//   }
+// }
+
+// welcome()
+
+let age = prompt()
+let welcome;
+if(age<18){
+  welcome = function(){
+    alert('you are a teenager')
+  }
+} else{
+  welcome = function(){
+    alert('you are not a teenager')
+  }
 }
-isPrime(6)
+welcome()
+
+
+
 
 
 
