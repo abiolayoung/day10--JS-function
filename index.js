@@ -207,7 +207,19 @@ can be used when the function has been delcared in a global scope but not assign
 // }
 // alert(sum(3,5))
 
+// property value shorthand tells us, if the value and property is the same thing then keep one of them
+// let obj3 = (name, age) => ({
+//   name,
+//   age,
+// }) the parenthesses is telling the arrow function to return as an object
 
+// instead of 
+// let obj3 = (name, age) => {
+//   return {
+//     name: name,
+//     age: age,
+//   };
+// };
 
 
 
